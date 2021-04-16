@@ -30,7 +30,7 @@ You are installing the necessary software so that we can run and test our applic
 
 * The instructor told us to get comfortable with using the terminal and command line a lot more because its more effecient to work from the command line. It involves less steps especially if you know where everything is. 
 
-The goal is to repitiously use the command line basics to move around the computer and I have outlined some basic responses to use. 
+The goal is to repitiously use the command line basics to move around the computer and I have outlined some basic commands to use. 
 
     1. `cd / cd ../`    
         - will change the directory or file
@@ -51,10 +51,10 @@ Lets make a directory and add files
     - cd into the directory
 
 2. `touch drivers.txt`
-    - create a drivers text file
+    - creates a drivers text file
 
 3. `cp drivers.txt salaries.txt`
-    - copy and rename a new file
+    - copies drivers file and renames the new file to salaries
 
 4. `ls` 
     - shows me all the files in the directory
@@ -79,6 +79,7 @@ Lets make a directory and add files
 
 9. `echo "adding more information about the drivers salaries later" > costcap.txt`
     - write this phrase and add it in the file called costcap, budget cost for the season. 
+    - If the file doesn't exist then it will be created.
 
 10. `cat drivers.txt | sort > sorted_drivers.txt`
     - open the file add a pipe so that you can choose which filter use. the sorted filter sorts the contents in alphabetically order.
@@ -86,3 +87,30 @@ Lets make a directory and add files
 
 11. `cat drivers.txt | grep Mclaren`
     - open the drivers file and search for all the files that have Mclaren in the text.
+
+#### Follow the link below for more helpful tips and tricks on command line shortcuts. 
+
+[Command line short cuts](https://github.com/0nn0/terminal-mac-cheatsheet)
+
+## GIT INTRO
+
+We will be going over the basics of git and how to navigate through the application.
+
+Git is the most popular platform used by the tech community to collaborate on projects, share code and display your personal portfolio to the world or anyone who is interested in your services. 
+
+** We are going to focus on answering these questions. **
+
+1. Define what a version control system does
+
+2. Describe why someone would want to use a version control system
+
+3. Describe git concepts such as pulls, pushes, merges, commits in layman's terms
+
+4. Identify main git commands to manage files
+
+5. Distinguish between local and remote repositories
+
+6. Distinguish between git and GitHub
+
+Basic git command line commands
+
