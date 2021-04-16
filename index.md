@@ -32,9 +32,12 @@ You are installing the necessary software so that we can run and test our applic
 
 The goal is to repitiously use the command line basics to move around the computer and I have outlined some basic responses to use. 
 
-    1. cd / cd ../  :  will change the directory or file
-    2. open index.html : will open a file
-    3. ls or ls -a : will list the folders/ directories/ apps/ 
+    1. `cd / cd ../`    
+        - will change the directory or file
+    2. `open index.html`  
+        - will open a file
+    3. `ls or ls -a` 
+        - will list the folders/ directories/ apps/ 
 
 ##### side note
 absolute path :/Users/romebell/Documents/profile.png
@@ -43,41 +46,43 @@ relative path : Documents/profile.png
 
 Lets make a directory and add files
 
-1. mkdir Car_constructor 
+1. `mkdir Car_constructor` 
     - creates a F1 Constructors folder
     - cd into the directory
 
-2. touch drivers.txt
+2. `touch drivers.txt`
     - create a drivers text file
 
-3. cp drivers.txt salaries.txt
+3. `cp drivers.txt salaries.txt`
     - copy and rename a new file
 
-4. ls 
+4. `ls` 
     - shows me all the files in the directory
     - should show drivers.txt and salaries.txt
 
-5. rm salaries.txt
+5. `rm salaries.txt`
     - delete the salary file from the directory
     - will permanently delete file. 
 
-6. code drivers.txt
+6. `code drivers.txt`
     - open VS to add information to the file
 
 7. add a list of drivers to drivers.txt
     - copy -> paste -> save
 
-[name: Molik Kidd, number: 22, team: Mclaren], [name: Lewis Ham, number: 44, team: Mercedes] , [name: Rome Bell, number: 77, team: Red Bull]
+   * [name: Molik Kidd, number: 22, team: Mclaren], 
+   * [name: Lewis Ham, number: 44, team: Mercedes], 
+   * [name: Rome Bell, number: 77, team: Red Bull]
 
-8. cat drivers.txt 
+8. `cat drivers.txt` 
     - open the file and view the contents in the terminal
 
-9. echo "adding more information about the drivers salaries later" > costcap.txt
+9. `echo "adding more information about the drivers salaries later" > costcap.txt`
     - write this phrase and add it in the file called costcap, budget cost for the season. 
 
-10. cat drivers.txt | sort > sorted_drivers.txt
+10. `cat drivers.txt | sort > sorted_drivers.txt`
     - open the file add a pipe so that you can choose which filter use. the sorted filter sorts the contents in alphabetically order.
     - then add your contents to a sorted_drivers file. If it doesn't exist then it will be created.
 
-11. cat drivers.txt | grep Mclaren
+11. `cat drivers.txt | grep Mclaren`
     - open the drivers file and search for all the files that have Mclaren in the text.
