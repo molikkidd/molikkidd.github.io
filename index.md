@@ -197,6 +197,78 @@ Im having errors with the image tag. The image will not show in the browser. I h
 
 ---- Solution to img tag -----
 
+## CSS SELECTORS Describe the syntactical and functional relationship between selectors, properties, and values
+Style all elements of a particular HTML element on a web page
+Describe the difference between class and id selectors
+Describe the heirarchy (order of precedence) between tag selectors, class selectors, id selectors, and inline-styles
+Demonstrate ability to include CSS inline, with a style tag, and from an external file
+Apply styles to specific elements by selecting elements with classes and ids
+Apply a set of styles to children of a specific class or tag
 
+LECTURE NOTE
+
+CSS : Cascading Style Sheets
+determines how the browsers interprets your styling for your application. you're telling the browser what and how to style the application. The browser reads the page from top to bottom and the styling rules you have at the bottom are priority over the ones at the top.
+
+You're mixing content with styling. Inline styling can cause errors with how the browser reads the page. Its not best practices to use inline styling often. 
+`<body style="background: red;"></body>`
+
+CSS is the styling for your application, its the color in the walls of your room, the roundness of your bathroom/ kitchen sink, the thickness or width of your your handrails on the stairs. 
+
+You have to tag and name your attributes in html so that you can select them in CSS. Your HTML tags are `selectors` in CSS because you're selecting an attribute from HTML.  
+
+As you're styling your application and adding different properties to your building. you want some elements that have the same styling `Class` like your windows on your house and others with unique styling `id` like your custom front door. Each property has a value associated with it that you can manipulate to your liking such as changing green to blue or the `width` of your refrigerator. 
+
+    `selector {
+    property_1: value_1;
+    property_2: value_2;
+    `}
+
+    `#window {
+        border: 1px solid black;
+    }`
+
+    `.door {
+        background: green;
+        border: 3px;
+        height: 80px;
+    }
+
+you still have to link your CSS page to your HTML page and you would use the <link href="style.css" rel="stylesheet" content="text/css"/>
+
+- a short cut for duplicating code
+
+Select the code you want to mirror then use `shift + alt + down` arrow to duplicate a piece of code.
+
+EXAMPLE CSS
+```body {
+    background: rgb(0, 217, 255);
+  }
+  
+  p {
+    color: orange;
+  }
+  
+  div {
+    border: 1px solid black;
+  }
+  
+  .comments {
+    font-weight: bold;
+    color: #64FE2E; /* green */
+  }
+  
+  #dolphin {
+    font-style: italic;
+    color: #0040FF; /*blue*/
+  }
+  
+  .first {
+    font-size: 40px;
+  }
+  
+  .second {
+    color: red;
+  }```
 
 
