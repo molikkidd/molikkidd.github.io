@@ -125,7 +125,12 @@ Git is the most popular platform used by the tech community to collaborate on pr
 
 4. Identify main git commands to manage files
 
-     `git add` , tells git which file you want to take a snap shot of then you take a snap shot with `git commit -m "short message about the commit"` then you send your snap shot to the main branch with `git push -u origin main`. Use `git status` along the way to check which branch you are on and if the file you're commited is added. Also use git revert if you run into issues when working with multiple collaborators. In dire cases you may have to use git reset to force the head branch to move to another point in time. caution you may lose data. 
+    `git init` adds a repository to your folder, which is a hidden file that connects to a remote repository. 
+
+    `git add file` tells git which file you want to take a snap shot of then you take a snap shot with `git commit -m "short message about the commit"` then you send your snap shot to the main branch with `git push -u origin main`. Use `git status` along the way to check which branch you are on and if the file you're commited is added. Also use git revert if you run into issues when working with multiple collaborators. In dire cases you may have to use git reset to force the head branch to move to another point in time. caution you may lose data. 
+
+    side note : use present tense when writing a commit message
+        ex: update read me / remove two functions / add new color
 
 5. Distinguish between local and remote repositories
     1. Local repo : your computers repos
@@ -134,8 +139,29 @@ Git is the most popular platform used by the tech community to collaborate on pr
 6. Distinguish between git and GitHub
     - git is a version control system
     - github is a social network built around git
-    
+
 Basic git command line commands
+
+    - You can have public and private repositories. 
+    - make sure you have an up to date github account with relevant information and no nicknames since it employers will be looking at it. 
+
+things to look out for: 
+people may have an issue with their git password login
+errors command not found
+
+## DAY 2 HTML & CSS
+
+a pull request is asking git hub to evaluate your code to see if its something you can add to the original code base....
+
+#### Making a pull request ####
+* click on pull request in the repository you're wanting data from.
+* create pull request 
+
+HTML
+
+Their are many analogies when it comes to HTML but the best one that I think that applies are bones as in the bones of a building, the foundation, beams and rebar of your application. Adding different attributes to your HTML page will function the same ways as adding walls, windows and doors to your structure. 
+
+When you are setting up your HTML page, you must set your  `<!DOCTYPE html>` Declaration so that the web browser knows what type of information it should be receiving. doctype is supported in all browsers and is a basic setting for HTML.
 
 
 
