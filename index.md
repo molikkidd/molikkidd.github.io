@@ -102,15 +102,40 @@ Git is the most popular platform used by the tech community to collaborate on pr
 
 1. Define what a version control system does
 
+    git hub would be your server comp. 
+
+    **Situation**: Two people are working on a application together but from seperate computers and local servers. Both are making contributions to each version of the application. Its important to share code effeciently so They both submit their a version of the application to a main server computer (github) which will store and manage the versions from both parties.   
+
 2. Describe why someone would want to use a version control system
 
+    It would be easy to collaborate and share code with people from all over the world and all the changes will be tracked and managed. 
+
+    Other VCS: 
+    CVS
+    Apache sub version : SVN
+    Mercurial : written in python
+    Monotone : written in C++
+
+
 3. Describe git concepts such as pulls, pushes, merges, commits in layman's terms
+    - pull : You are requesting/downloading data from a repository
+    - push : You're pushing data to a repository
+    - merges : moves the commits to the main branch
+    - commits : is a snapshot of your repository
 
 4. Identify main git commands to manage files
 
+     `git add` , tells git which file you want to take a snap shot of then you take a snap shot with `git commit -m "short message about the commit"` then you send your snap shot to the main branch with `git push -u origin main`. Use `git status` along the way to check which branch you are on and if the file you're commited is added. Also use git revert if you run into issues when working with multiple collaborators. In dire cases you may have to use git reset to force the head branch to move to another point in time. caution you may lose data. 
+
 5. Distinguish between local and remote repositories
+    1. Local repo : your computers repos
+    2. remote repo : on a remote server for all team members to access
 
 6. Distinguish between git and GitHub
-
+    - git is a version control system
+    - github is a social network built around git
+    
 Basic git command line commands
+
+
 
