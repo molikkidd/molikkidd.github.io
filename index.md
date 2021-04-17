@@ -240,35 +240,37 @@ you still have to link your CSS page to your HTML page and you would use the <li
 
 Select the code you want to mirror then use `shift + alt + down` arrow to duplicate a piece of code.
 
-EXAMPLE CSS
-```body {
-    background: rgb(0, 217, 255);
-  }
-  
-  p {
-    color: orange;
-  }
-  
-  div {
-    border: 1px solid black;
-  }
-  
-  .comments {
-    font-weight: bold;
-    color: #64FE2E; /* green */
-  }
-  
-  #dolphin {
-    font-style: italic;
-    color: #0040FF; /*blue*/
-  }
-  
-  .first {
-    font-size: 40px;
-  }
-  
-  .second {
-    color: red;
-  }```
+### EXAMPLE CSS
+    ```
+    body {
+        background: rgb(0, 217, 255);
+    }
+    
+    p {
+        color: orange;
+    }
+    
+    div {
+        border: 1px solid black;
+    }
+    
+    .comments {
+        font-weight: bold;
+        color: #64FE2E; /* green */
+    }
+    
+    #dolphin {
+        font-style: italic;
+        color: #0040FF; /*blue*/
+    }
+    
+    .first {
+        font-size: 40px;
+    }
+    
+    .second {
+        color: red;
+    }
+    ```
 
 
