@@ -1,5 +1,7 @@
 ## Welcome to My Github Blog
 
+This is my third time revisiting coding and the software engineering space. I started in 2017 with a full stack course on udemy and after that I received a google scholarship and certification in 11/2018. I took a job in another country at the end of that year which put a pause to studying for little over a year. I came back to the US in 01/2020 and started studying again until 08/2020 when I started working again in another industry. After working in another industry for 9 months so far I can clearly see that tech is the far better option for a longterm career.
+
 ## ORIENTATION
 It was an over view of what the company has to offer their students. Their are many people who will support the students as they learn how to code. For the class size their are a lot people around who can help. Various people from different roles in the company spoke about their background and journey into the tech space. 
 People from the arts, customer service, hospitality and many more have made the switch to and seem very satisfied with their choice. Amongst the students who spoke many are embarking on a career change so that they can change the directory of their lives. 
@@ -157,11 +159,44 @@ a pull request is asking git hub to evaluate your code to see if its something y
 * click on pull request in the repository you're wanting data from.
 * create pull request 
 
-HTML
+# HTML
 
 Their are many analogies when it comes to HTML but the best one that I think that applies are bones as in the bones of a building, the foundation, beams and rebar of your application. Adding different attributes to your HTML page will function the same ways as adding walls, windows and doors to your structure. 
 
 When you are setting up your HTML page, you must set your  `<!DOCTYPE html>` Declaration so that the web browser knows what type of information it should be receiving. doctype is supported in all browsers and is a basic setting for HTML.
+
+## DELIVERABLE:
+
+The goal for the exercise to recreate and HTML page from someone elses github. Its a simple page with an image in the header, titles and paragraphs with text. Two of the titles have different colors. Visit the link below to see the page.
+
+`https://taylordarneille.github.io/finished-intro-demo/`
+
+After viewing the page we are suppose to create, I inspected the page to see the html set up. I scanned the page from top to bottom. I saw clicked through the tags in the HTML file and copied them to my `index.html`. 
+
+I saw in the HTML <head> tag that the page was linked to a CSS style sheet. 
+
+`<link href="style.css" type="text/css" rel="stylesheet" media="screen">`
+
+So I `touch style.css` then `ls` to check that it was added to the folder. I opened the style.css in the VS Code with `code style.css`. 
+
+I went back to the example web page and in the inspector I selected the "Style Editior" to see what the CSS style sheet.
+
+I copied and pasted the text in my `style.css`.
+I went back to my HTML page and inserted the 
+`<link href="style.css" type="text/css" rel="stylesheet" media="screen">` 
+in my <head> tag
+
+Went back and right-clicked the image --> saved it to the current folder. 
+then added changed the path in the image tag
+
+<header>
+    <img src="new-york.jpg" alt="New Zork"/> 
+</header>
+
+Im having errors with the image tag. The image will not show in the browser. I have the img in the same folder as my index. I will update with a solution. I am sure its simple. 
+
+---- Solution to img tag -----
+
 
 
 
