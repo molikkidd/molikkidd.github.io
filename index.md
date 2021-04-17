@@ -184,14 +184,14 @@ I went back to the example web page and in the inspector I selected the "Style E
 I copied and pasted the text in my `style.css`.
 I went back to my HTML page and inserted the 
 `<link href="style.css" type="text/css" rel="stylesheet" media="screen">` 
-in my <head> tag
+in my `<head>` tag
 
 Went back and right-clicked the image --> saved it to the current folder. 
 then added changed the path in the image tag
 
-<header>
-    <img src="new-york.jpg" alt="New Zork"/> 
-</header>
+`<header>`
+    `<img src="new-york.jpg" alt="New Zork"/>` 
+`</header>`
 
 Im having errors with the image tag. The image will not show in the browser. I have the img in the same folder as my index. I will update with a solution. I am sure its simple. 
 
