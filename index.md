@@ -273,4 +273,47 @@ Select the code you want to mirror then use `shift + alt + down` arrow to duplic
     }
     ```
 
+## LECTURE NOTES
 
+* What is margin?
+
+    * It is the area out side of the element. 
+    * You can change the width and height of the margin to create or remove space around elements. It can also move the element as well. 
+
+    * margin does not have a background color. 
+
+    ```
+        div {
+            margin-top: 1px;
+            margin-right: 2px;
+            margin-bottom: 3px;
+            margin-left: 4px;
+        }
+        or 
+
+        div {
+            margin: 1px 2px 3px 4px;
+        }
+    ```
+* border
+    * inside the element 
+    * goes around the padding and content 
+
+* padding
+    * inside the element 
+    * creates spacing between and around elements 
+
+* content 
+    * where your text and images appear
+    * elements color property changes the text
+
+## CSS BOX MODEL
+
+You can inspect the elements of your web page by going to your settings and selecting developer tools then select the option for page inspection. 
+
+Look through the HTML file and notice how many links to css and js files are on the page. Notice the different elements used and how they are used. You can also change css and html text in inspection mode. It will not be saved on their servers. 
+
+
+
+
+    
