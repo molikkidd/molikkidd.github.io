@@ -353,17 +353,17 @@ footer {
   grid-area: footer:
 }
 
-## DELIVERABLE
+### DELIVERABLE
 
 Recreate a page from Airbnb using the flex - grid and css/html page provided in the css-airbnb/ 
 
 1.) I cloned the deliverable from the class repository on github then I opened code index.html then cd css/style.css I looked at the solution.jpg to see how the finished page is suppose to look.
 
-Observation:
+- Observation:
 
 It looks like a grid a `column` with the content centered in the middle and it also has a button to see all the options. Their is another `row` grid of pictures with a text overlay. 
 
-Breakdown: Based off the sample
+### Breakdown: Based off the sample
 
 2.) I started by adding the necessary html elements I saw on the sample page . <h1>, <p>, <div>, <img> and <button>.
 
@@ -371,49 +371,49 @@ Breakdown: Based off the sample
 
 4.) I started working on the CSS stylesheet. Added to the css sheet. 
 
-.item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+`    .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }`
 
 which will take the div container .item container and center all its contents from top to bottom. 
 
 5.) Added another grid for the photos which evenly spaced them through the container. I added padding around the to closely match the sample website. 
 
-.photo_grid {
-  display: inline-flex;
-  justify-content: space-between;
-  position: relative;
-  padding-bottom: 2%; 
-  padding-top: .5%;
-  max-width: 70%;
-  
-}
+`    .photo_grid {
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 2%; 
+    padding-top: .5%;
+    max-width: 70%;
+    
+    }`
 
 6.) The photos were all different sizes but the ones on the bottom were larger than the top photos. I assumed it was a padding, margin or grid size issue, so I selected the img element in CSS and attempted to gave all the imgs the same height and width. 
 
-img {
-  height: 500px;
-  width: 400px; 
-  padding: 20px;
-	margin: 1px;
-}
+    ``img {
+    height: 500px;
+    width: 400px; 
+    padding: 20px;
+        margin: 1px;
+    }
 
-button {
-  width: 400px;
-  height: 3em;
-  margin-bottom: 1%;
-  border-radius: 0px;
-  font-family: calibri;
-  font-size:20px;
-}
+    button {
+    width: 400px;
+    height: 3em;
+    margin-bottom: 1%;
+    border-radius: 0px;
+    font-family: calibri;
+    font-size:20px;
+    }``
 
-Side Note
-Excellent website for Flex Grid
-http://flexboxfroggy.com/
-http://cssgridgarden.com/
-https://www.sketchingwithcss.com/samplechapter/cheatsheet.html
+### Side Note
+- Excellent website for Flex Grid
+* http://flexboxfroggy.com/
+* http://cssgridgarden.com/
+* https://www.sketchingwithcss.com/samplechapter/cheatsheet.html
 
 
 ## JS ARRAYS/ OBJECTS/ FUNCTIONS
