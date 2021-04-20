@@ -313,7 +313,118 @@ You can inspect the elements of your web page by going to your settings and sele
 
 Look through the HTML file and notice how many links to css and js files are on the page. Notice the different elements used and how they are used. You can also change css and html text in inspection mode. It will not be saved on their servers. 
 
+## CSS GRID
+
+The CSS Grid is self explainatory, its a grid like the grid paper you use to connect lines to make curves which lead to interesting designs like 4 pointed stars and 8 pointed stars and others as well, but we arent making stars. The cells of the grid can be added or separated to make larger or smaller grids. A group of cells in a row or column is called a track. 
+
+You can name and tag your grids in HTML and customize them CSS the same way you would a normal element.
+
+Examples
+
+body {
+    display: grid;
+    min-height: 100%;
+  }
+
+<body>
+  <header></header>
+  <aside></aside>
+  <main></main>
+  <footer></footer>
+</body>
+
+body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 200px 1fr 120px;
+  grid-template-columns: 180px 1fr;
+}  
+
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: sidebar;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer:
+}
+
+## DELIVERABLE
+
+Recreate a page from Airbnb using the flex - grid and css/html page provided in the css-airbnb/ 
+
+1.) I cloned the deliverable from the class repository on github then I opened code index.html then cd css/style.css I looked at the solution.jpg to see how the finished page is suppose to look.
+
+Observation:
+
+It looks like a grid a `column` with the content centered in the middle and it also has a button to see all the options. Their is another `row` grid of pictures with a text overlay. 
+
+Breakdown: Based off the sample
+
+2.) I started by adding the necessary html elements I saw on the sample page . <h1>, <p>, <div>, <img> and <button>.
+
+3.) I made two elements for the description/ picture/ button combination. I wrapped both of the sections in a container that I labeled class="item".
+
+4.) I started working on the CSS stylesheet. Added to the css sheet. 
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+which will take the div container .item container and center all its contents from top to bottom. 
+
+5.) Added another grid for the photos which evenly spaced them through the container. I added padding around the to closely match the sample website. 
+
+.photo_grid {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 2%; 
+  padding-top: .5%;
+  max-width: 70%;
+  
+}
+
+6.) The photos were all different sizes but the ones on the bottom were larger than the top photos. I assumed it was a padding, margin or grid size issue, so I selected the img element in CSS and attempted to gave all the imgs the same height and width. 
+
+img {
+  height: 500px;
+  width: 400px; 
+  padding: 20px;
+	margin: 1px;
+}
+
+button {
+  width: 400px;
+  height: 3em;
+  margin-bottom: 1%;
+  border-radius: 0px;
+  font-family: calibri;
+  font-size:20px;
+}
+
+Side Note
+Excellent website for Flex Grid
+http://flexboxfroggy.com/
+http://cssgridgarden.com/
+https://www.sketchingwithcss.com/samplechapter/cheatsheet.html
 
 
+## JS ARRAYS/ OBJECTS/ FUNCTIONS
 
-    
+The best way to store information such as numbers, booleans, text is in an array. This allows us to grab the information for analysis and other computations. You can store arrays in a variable. Its like a tubberware container for your information. You can attach different methods to your variable to manipulate the contents. 
+
+const friends = ['Joe', 'Bena','Ho'];
+let afriend = friends[1]
+=> 'Bena';
+
+const favorites = "cars,travel,nature,goodfood,beaches";
+
+Object.assign([], favorites);
+
