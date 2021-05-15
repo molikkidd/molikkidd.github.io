@@ -428,3 +428,47 @@ const favorites = "cars,travel,nature,goodfood,beaches";
 
 Object.assign([], favorites);
 
+
+## FAST FORWARD TO EXPRESS AUTHENTICATION
+
+
+Do you remember the last time you used authentication?
+
+We use authentication on a regular basis to login into our accounts online or game on your phone. You are inputting your user name and password into an application, the application will take your combination of strings and integers and search for a matching pair because your username and password are unique and AUTHENTIC to your profile. Once the password and username are found, the account is AUTHENTICATED. 
+
+Why is authentication important?
+
+It is important for security purposes because if you didnt verify information then anyone can acccess anyone elses information without restriction. Authentication is also important for locating profiles and accounts. How would you know who's account is who if you didnt verify that the username or password is linked to a specific user. 
+
+We will be using Express JS to interact with our application. 
+
+PASSPORT JS:
+popular.
+Authentication middle ware used in node. authenticates users and request, basically checking if the inserted information is valid before moving to the next steps of logging in.  
+
+Their are many avenues or strategies we can use to authenticate our information, such as ....FACEBOOK, TWITTER, GOOGLE, GITHUB...
+
+How many different ways are their to authenticate a user? "520"
+go to passportjs.org
+
+Passport-local:
+we will be creating our own strategy to authenticate a user instead of the main stream google, fb and github methods. 
+
+Express-Sessions:
+We will be using sessions to keep users logged in. 
+Once youre logged in, a cookie is sent to a user and everytime a user makes a request while logged in, that cookie is sent back to the application, in the process verifying the user every step of the way. NO COOKIE, NO ACCESS.  All companies do this process. 
+
+Cookie : a string that will be passed back and forth. 
+Some cookies have expirations. If you stay on a website too long then you may get a prompt asking if you're still there otherwise you will be logged out. 
+
+Cookies can track your movement on websites and store the information which can be used for advertisements on other applications. For example, you have a couple tabs open in your browser and you're searching for workout supplements on Amazon. You scroll through a couple products and didnt find anything you where interested in, so you go back to the youtube rabbit hole of watching road rage compilations. Next thing you know, you have weight lifting supplements advertising showing at the bottom of your videos. 
+
+The cookies from your amazon was tracking what websites/applications you have open in your browser, communicated with the application and placed an advertisement based on your searches from its site. 
+
+Node.brcypt.js:
+
+Do not store plain text passwords in your database. We store hash passwords in the database. bcrypt runs your password through a hash function that encrypts it into a set of characters that are hard to decypher. It is a lock on your proverbial door. 
+
+BlowFish Cipher: is algorithm that will encrypt the information for you. 
+
+FOLLOW THE INSTRUCTIONS ON THE README FOR INSTALLING YOUR APP.
