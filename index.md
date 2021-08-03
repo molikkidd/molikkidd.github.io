@@ -471,4 +471,59 @@ Do not store plain text passwords in your database. We store hash passwords in t
 
 BlowFish Cipher: is algorithm that will encrypt the information for you. 
 
-FOLLOW THE INSTRUCTIONS ON THE README FOR INSTALLING YOUR APP.
+### FOLLOW THE INSTRUCTIONS ON THE README FOR INSTALLING YOUR APP.
+
+Validations are important to install in your applications because it allows us to set rules that the model has to follow in order to authenticate the information. For example, requiring an email, phone number or password. The data cannot be left blank, otherwise it is would create blank spots in our database, which is a waste of space. 
+
+look at index.ejs for reference. 
+
+hash a password before it enters the database (complete at the model level). When a person enters their information from a sign up sheet on a website, the info will get stored in a database, such as a user  name, email, address and password. Before the new information can enter the database it must be hashed (encrypted) before its stored. 
+password: "yezzir" --hashed--> "!34jsf*s8" then stored. 
+
+### PROJECT 2
+
+This is a walkthrough on how to set up and application from an authentication template. 
+
+The project will be centered around logining into your account. Being able to display top 10 stocks in different caterogies such as ETF, Indexes and Indy stocks as well as crypto currencies. 
+
+Step by step changing your template:
+
+1- Fork and clone your template from GITHUB.
+2- Setup your boiler plate
+3- new database
+    1) add `createdb stock_auth` in your postgress data base
+    * you may have to update to the new db name in your config file before creating a new db from the command line. 
+4- npm install
+    1) install all the dependencies needed for your application
+5- add new environment variables
+    1)  add your new secret session to your .env file
+     * `echo "SECRET_SESSION=stock_auth" >> .env`
+     * you can add more env variables  
+6- db sequelize 
+    1) `sequelize db:migrate`
+    * this migrates the user model that was created from the template to the new stock_auth db
+7- create another model 
+    1) `sequelize model:create --name stock --attributes industry:string,ticker:string,price:integer,userId:integer`
+
+    * this will create another model in your postgres database
+
+8- add associations and validations
+    1) Go to your new stock.js model 
+    2) associate the stock model to your user model. 
+    * `models.stock.belongsTo(models.user)` stock.js assoc.
+    * `models.user.hasMany(models.stock)` user.js assoc
+
+    3) add validations to your attributes
+        - isUpperCase, isEmptyNull, change characters length, 
+        add required to html tags.
+9- migrate your changes to the database
+    1) sequelize db:migrate
+
+10- add form to add/view your stocks
+    1) create and a new `Stock` folder in your views folder
+    2) then a `newStock.ejs` file
+    3) Inside of the ejs file, add your form for your model attributes
+        * INDUSTRY, TICKER, PRICE
+        * ADD A submit button
+    4)
+11- I changed some basic information in my file structure and wanted to uploaded the latest version. 
